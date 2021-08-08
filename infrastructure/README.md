@@ -2,9 +2,9 @@
 
 
 ### Pre-requisites
- - Terraform 1.x
- - An Azure account
- - The Azure CLI Tool installed
+ - Terraform 1.x (`tfenv` is a recommended tool to manage tf binaries)
+ - Azure account [register](https://azure.microsoft.com/en-us/free/)
+ - The Azure CLI Tool [download](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ### How to
 
@@ -17,8 +17,7 @@ three resources should be created manually to implement it(can be autamated late
 
 ### Infrastructure creation
 
- - Install the Azure CLI tool - [link](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
- - Authenticate using the Azure CLI 
+ - Authorize in Azure cloud using the Azure CLI 
     ```bash
     az login
     ```
@@ -26,7 +25,11 @@ three resources should be created manually to implement it(can be autamated late
     ```bash
     ssh-keygen
     ```
- - ...
+ - Apply terraform 
+   ```bash
+    cd infrastructure
+    terraform apply -auto-approve
+    ```
 
 ### Todo
 

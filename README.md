@@ -21,7 +21,17 @@ Program to get current temperature should be written by you.
 
 ---
 
-### Pre-requisites
+### How to
+
+ - For infrastructure layer read - [README](infrastructure/README.md)
+ - For application layer read - [README](app/README.md)
+
+### Demo 
+
+ - URL - [grafana-cloudmore.westeurope.cloudapp.azure.com](http://grafana-cloudmore.westeurope.cloudapp.azure.com/)
+
+ - ![alt text](https://i.ibb.co/GnPwdy4/2021-08-08-22-09.png)
+
 
 ### Todo
 
