@@ -7,6 +7,10 @@
 ### Todo
 
 - [ ] Migrate Prometheus to Loki
+- [ ] Add Unit tests
+- [ ] Migrate to Poetry
+- [ ] Remove port exposing for prometheus and pushgateway
+- [ ] Use native prometheus_client to push metrics into pushgateway
 
 ### Notes
 
