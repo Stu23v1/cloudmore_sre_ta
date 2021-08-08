@@ -1,0 +1,8 @@
+# main libraies
+requests==2.25.1
+
+# dependencies
+
+
+# development
+#pytest==6.2.3
