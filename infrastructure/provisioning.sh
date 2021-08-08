@@ -34,4 +34,7 @@ do
     fi
 sleep 1
 done
-# To Be Continued
+
+cd ${app_path}
+
+docker-compose up -d --build

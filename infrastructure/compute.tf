@@ -33,3 +33,21 @@ resource "null_resource" "deploy_app" {
   }
   depends_on = [module.linuxserver]
 }
+
+
+# TBD
+resource "azurerm_network_security_rule" "http_access" {
+  name                        = "http"
+  priority                    = 100
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "Tcp"
+  source_port_range           = "*"
+  destination_port_range      = "80"
+  source_address_prefix       = "*"
+  destination_address_prefix  = "*"
+  resource_group_name         = data.azurerm_resource_group.west_eu.name
+  network_security_group_name = module.linuxserver.network_security_group_name
+
+  depends_on = [module.linuxserver]
+}

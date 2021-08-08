@@ -35,3 +35,4 @@ three resources should be created manually to implement it(can be autamated late
 - [ ] Move hardcoded variables into variables file
 - [ ] Automate bootstrap process
 - [ ] Improve rsa key delivery (store the key inside the cloud)
+- [ ] Add proper domain name (Cloud DNS + freenom.com)
